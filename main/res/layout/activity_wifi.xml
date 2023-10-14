@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.Wifi">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/container1"
+        android:padding="10dp"
+        >
+
+        <ImageButton
+            android:id="@+id/wifi_back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:backgroundTint="@color/white"
+            android:minHeight="48dp"
+            android:src="@drawable/back"
+            tools:ignore="SpeakableTextPresentCheck" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Save"
+            android:backgroundTint="@color/green"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:id="@+id/wifi_save_button"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="Create"
+            android:backgroundTint="@color/green"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:id="@+id/wifi_create_button"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/container1"
+        android:padding="10dp"
+        android:id="@+id/container2"
+        >
+
+        <EditText
+            android:id="@+id/wifi_edit_text_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Network name(SSID)"
+            android:minHeight="48dp" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:layout_below="@id/wifi_edit_text_name"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:id="@+id/wifi_edit_text_password"
+
+            />
+    </RelativeLayout>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/container2"
+        android:layout_marginTop="10dp"
+        android:layout_centerInParent="true"
+        android:id="@+id/wifi_image_view"
+        />
+
+</RelativeLayout>

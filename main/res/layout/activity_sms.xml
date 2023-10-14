@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.Sms">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/container1"
+        android:padding="10dp"
+        >
+
+        <ImageButton
+            android:id="@+id/sms_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:backgroundTint="@color/white"
+            android:minHeight="48dp"
+            android:src="@drawable/back"
+            tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/Save"
+            android:backgroundTint="@color/green"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:id="@+id/sms_save"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="@string/Create"
+            android:backgroundTint="@color/green"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:id="@+id/sms_create"
+            />
+    </RelativeLayout>
+    <EditText
+        android:id="@+id/sms_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="To"
+        android:minHeight="48dp"
+        android:inputType="textLongMessage"
+        tools:ignore="VisualLintTextFieldSize"
+        android:layout_below="@id/container1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:layout_below="@id/sms_name"
+        android:hint="Sms"
+        android:inputType="textPhonetic"
+        android:id="@+id/sms_sms"
+        tools:ignore="VisualLintTextFieldSize"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sms_sms"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_centerInParent="true"
+        android:id="@+id/sms_image"
+        />
+
+
+
+</RelativeLayout>

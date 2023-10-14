@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".history.Historyfragment">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeLayout1"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/history"
+            android:paddingLeft="10dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_centerVertical="true"
+            />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/deleteButton"
+            android:src="@drawable/baseline_delete_sweep"
+            android:layout_alignParentRight="true"
+            android:paddingRight="10dp"
+            android:backgroundTint="@color/white"
+            android:layout_centerVertical="true"
+            />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/relativeLayout1"
+        android:paddingTop="5dp"
+        android:id="@+id/rl"
+        >
+
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tab_layout"
+        app:tabIndicator="@color/green"
+        android:backgroundTint="@color/gray"
+        app:tabSelectedTextColor="@color/green"
+        app:tabTextColor="@color/black"
+        app:tabIconTint="@color/gray"
+        />
+        <androidx.viewpager2.widget.ViewPager2
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/view_pager2"
+            android:layout_below="@+id/tab_layout"
+            />
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

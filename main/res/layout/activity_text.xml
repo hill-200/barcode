@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.Text">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+        android:id="@+id/rl1"
+        >
+
+        <ImageButton
+            android:id="@+id/text_back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:backgroundTint="@color/white"
+            android:minHeight="48dp"
+
+            android:src="@drawable/back"
+            tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:backgroundTint="@color/green"
+            android:text="@string/Save"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:id="@+id/text_save_button"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_create_buttons"
+            android:layout_alignParentEnd="true"
+            android:text="@string/Create"
+            android:backgroundTint="@color/green"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+
+            tools:ignore="RelativeOverlap" />
+
+    </RelativeLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl1"
+        android:layout_margin="5dp"
+        android:hint="Enter text"
+        android:minHeight="48dp"
+        android:id="@+id/edit_text_text"
+        tools:ignore="VisualLintTextFieldSize"
+        android:inputType="text" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_Imageview"
+        android:layout_below="@+id/edit_text_text"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="7dp"
+        />
+
+
+
+
+</RelativeLayout>

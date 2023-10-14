@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.Contact">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/container1"
+        android:padding="10dp"
+        >
+
+        <ImageButton
+            android:id="@+id/contact_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:backgroundTint="@color/white"
+            android:minHeight="48dp"
+            android:src="@drawable/back"
+            tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/Save"
+            android:backgroundTint="@color/green"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:id="@+id/contact_save"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="@string/Create"
+            android:backgroundTint="@color/green"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:id="@+id/contact_create"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/container1"
+        android:padding="10dp"
+        android:id="@+id/container2"
+        >
+
+        <EditText
+            android:id="@+id/contact_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Contact name"
+            android:minHeight="48dp"
+            android:inputType="textPersonName"
+            tools:ignore="VisualLintTextFieldSize" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:layout_below="@id/contact_name"
+            android:hint="Contact no."
+            android:inputType="textPhonetic"
+            android:id="@+id/contact_no"
+
+            tools:ignore="VisualLintTextFieldSize" />
+    </RelativeLayout>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/container2"
+        android:layout_marginTop="10dp"
+        android:layout_centerInParent="true"
+        android:id="@+id/contact_image"
+        />
+
+</RelativeLayout>
